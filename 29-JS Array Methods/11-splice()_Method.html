@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The splice() Method</h2>
+
+<p>The splice() method adds new elements to an array:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+// let removed = fruits.splice(2, 2, "Lemon", "Kiwi"); 
+fruits.splice(2,0, "Lemon", "Kiwi");// splice items on from index:2 remove items:0, Add lemon and kiwi
+// fruits.splice(0, 1); deletes 1 item from index:0
+document.getElementById("demo1").innerHTML = fruits;
+
+</script>
+
+</body>
+</html>

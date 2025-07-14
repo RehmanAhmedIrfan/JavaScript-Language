@@ -1,0 +1,22 @@
+<!-- The startsWith() method returns true if a string begins with a specified value. Otherwise it returns false: -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The startsWith() Method</h2>
+<p>Check if a string starts with "Hello":</p>
+
+<p id="demo"></p>
+
+<p>The startsWith() method is not supported in Internet Explorer.</p>
+
+<script>
+let text = "Hello world, welcome to the universe.";
+// text.startsWith("world")
+// document.getElementById('demo').innerHTML = text.startsWith("Hello");
+document.getElementById("demo").innerHTML = text.startsWith("world", 5);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- substr() is similar to slice(). The difference is that the second parameter specifies the length of the extracted part. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Apple, Banana, Kiwi";
+// let part = str.substr(7); // output rest of the string after index 7
+// let part = str.substr(-4); // from end of the string position wil be counted
+document.getElementById("demo").innerHTML = str.substr(7,6);
+</script>
+
+</body>
+</html>

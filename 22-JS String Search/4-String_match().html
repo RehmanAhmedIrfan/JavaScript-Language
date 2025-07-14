@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The match() Method</h2>
+
+<p>Perform a search for "ain":</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in SPAIN stays mainly in the plain";
+const myArr = text.match("ain");
+// text.match(/ain/);
+// text.match(/ain/g);
+// text.match(/ain/gi);
+// If a regular expression does not include the g modifier (global search), match() will return only the first match in the string.
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+</script>
+
+</body>
+</html>
