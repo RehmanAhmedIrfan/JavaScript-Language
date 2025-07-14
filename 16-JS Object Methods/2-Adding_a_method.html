@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Adding a Method</h2>
+
+<p id="demo"></p>
+
+<script>
+    const person = {
+        firstName: "Rehman",
+        lastName: "Ahmed",
+        age: 22
+    };
+    person.name = function (){
+        return this.firstName + " " + this.lastName;
+    }
+
+    // Using JavaScript Methods
+    person.name = function (){
+        return (this.firstName + " " + this.lastName).toUpperCase();
+    }
+
+    document.getElementById("demo").innerHTML = "My Name is " + person.name();
+</script>
+</body>
+</html>

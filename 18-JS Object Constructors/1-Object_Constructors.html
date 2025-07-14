@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Object Constructors</h1>
+    <p id="demo"></p>
+    <script>
+        // Constructor Function for Person objects
+        function person (first , last, age, eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            // this.nationality = "English";
+        }
+        // Create a person Object 
+        const myFather = new person("Muhammad", "Irfan", 40, "Black");
+        const myMother = new Person("Munazza", "Shaheen", 40, "green");
+
+        document.getElementById('demo').innerHTML = "My father's age is: " + myFather.age + "."; 
+        document.getElementById("demo").innerHTML = "My father is " + myFather.age + ". My mother is " + myMother.age + ".";
+
+        // A value given to a property will be a default value for all objects created by the constructor:
+
+        // document.getElementById("demo").innerHTML = "My father is " + myFather.nationality + ". My mother is " + myMother.nationality; 
+    </script>
+</body>
+</html>
