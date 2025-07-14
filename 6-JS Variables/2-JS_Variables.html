@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Variables</h1>
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
+    <p id="demo"></p>
+    <script>
+        const pi = 3.14;
+        let person = "Ahmed";
+        let answer = 'Yes I am!';
+        document.getElementById('demo').innerHTML = pi + "<br>" + person + "<br>" + answer;
+    </script>
+</body>
+</html>
+
+<!-- You can declare many variables in one statement.
+Start the statement with let and separate the variables by comma:
+let person = "John Doe", carName = "Volvo", price = 200; -->
+
+
+<!-- A declaration can span multiple lines:
+let person = "John Doe",
+carName = "Volvo",
+price = 200; -->
+
+
+<!-- If you re-declare a JavaScript variable declared with var, it will not lose its value.
+The variable carName will still have the value "Volvo" after the execution of these statements:
+var carName = "Volvo";
+var carName; -->
+
+
+<!-- You cannot re-declare a variable declared with let or const.
+This will not work:
+let carName = "Volvo";
+let carName; -->
