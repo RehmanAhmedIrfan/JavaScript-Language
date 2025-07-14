@@ -1,0 +1,55 @@
+Object Destructuring
+====================
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+
+// Destructuring
+let {firstName, lastName} = person;
+Default values:
+---------------
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+
+// Destructuring
+// let {firstName, lastName} = person;
+let {firstName, lastName, country = "US"} = person;
+
+Object Property Alias
+---------------------
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+
+// Destructuring
+let {lastName : name} = person;
+
+String Destructuring
+====================
+// Create a String
+let name = "W3Schools";
+
+// Destructuring
+let [a1,a2,a3] = name;
+let [a1, a2, a3, a4, a5] = name;
+
+Array Destructuring
+===================
+// Create an Array
+const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
+
+// Destructuring
+let [fruit1, fruit2] = fruits;
+let [fruit1,,,fruit2] = fruits; // Skipping Array values
+let {[0]:fruit1 ,[1]:fruit2} = fruits; / array position values
+const [a,b, ...rest] = numbers // Rest of the string

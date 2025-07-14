@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets in JS</title>
+</head>
+<body>
+    <script>
+        // const letters = new Set(["a", "b", "c"]);
+        // console.log(letters.size);
+
+        // // Create a Set
+        // const letters = new Set();
+        // // Add values to set
+        // letters.add("a");
+        // letters.add("b");
+        // letters.add("c");
+
+        // Create a Set and add variables:
+        const letters = new Set();
+        const a = "a";
+        const b = "b";
+        const c = "c";
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+
+        // List all Elements
+        let text = "";
+        for (const x of letters) {
+            text += x;
+        }
+        //typeof letters;      // Returns object
+        // letters instanceof Set;  // Returns true
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="demo"></p>
+    <script>
+        // const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        // let txt = "";
+        // let i = 0;
+        // for(; cars[i] ;){
+        //     txt += cars[i] + "<br>";
+        //     i++;
+        // }
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        let i = 0;
+        let text = "";
+
+        while (cars[i]) {
+            text += cars[i];
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

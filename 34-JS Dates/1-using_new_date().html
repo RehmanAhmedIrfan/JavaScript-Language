@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+<p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+<p id="demo"></p>
+
+<script>
+// const d = new Date();
+const d = new Date("2022-03-25");
+//const d = new Date(2018, 15, 24, 10, 33, 30); //Specifying a month higher than 11, will not result in an error but add the overflow to the next year:
+//const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+//const d = new Date(2018); Treated as millieconds
+//const d = new Date(99, 11, 24); //One and two digit years will be interpreted as 19xx:
+// const d = new Date(9, 11, 24); //OUtput: 1909
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>

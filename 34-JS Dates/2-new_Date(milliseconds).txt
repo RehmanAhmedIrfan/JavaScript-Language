@@ -1,0 +1,12 @@
+01 January 1970 plus 100 000 000 000 milliseconds is:
+const d = new Date(100000000000);
+------------
+January 01 1970 minus 100 000 000 000 milliseconds is:
+const d = new Date(-100000000000);
+--------------------
+January 01 1970 plus 24 hours is:
+const d = new Date(24 * 60 * 60 * 1000);
+// or : const d = new Date(86400000);
+-----------------
+01 January 1970 plus 0 milliseconds is:
+const d = new Date(0);

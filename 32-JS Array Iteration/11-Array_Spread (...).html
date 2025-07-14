@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The ... Operator</h2>
+
+<p>The "spread" operator spreads elements of iterable objects:</p>
+
+<p id="demo"></p>
+
+<script>
+    const q1 = ["Jan", "Feb", "Mar"];
+    const q2 = ["Apr", "may", "june"];
+    const q3 = ["july", "August", "september"];
+    const q4 = ["october", "November", "dec"];
+
+    const years = [...q1, ...q2, ...q3, ...q4];
+    document.getElementById("demo").innerHTML = years;
+</script>
+
+</body>
+</html>

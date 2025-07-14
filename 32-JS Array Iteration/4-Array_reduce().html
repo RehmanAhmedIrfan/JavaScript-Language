@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The reduce() Method</h2>
+
+<p>Find the sum of all numbers in an array:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+const sum = numbers.reduce(myfunction);
+// let sum = numbers.reduce(myFunction, 100);
+// let sum = numbers.reduceRight(myFunction);
+
+document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+function myfunction (total , value, index, array){
+    return total + value;
+}
+</script>
+
+</body>
+</html>

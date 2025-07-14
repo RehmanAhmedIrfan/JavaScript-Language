@@ -1,0 +1,67 @@
+Syntax:
+/pattern/modifiers;
+Example:
+/w3schools/i;
+
+let text = "Visit W3Schools";
+let n = text.search(/w3schools/i);
+
+let text = "Visit Microsoft!";
+let result = text.replace("Microsoft", "W3Schools");
+let result = text.replace(/microsoft/i, "W3Schools");
+
+Regular Expression Modifiers
+============================
+
+let text = "Visit W3Schools";
+let result = text.match(/w3schools/i);
+
+let text = "Is this all there is?";
+let result = text.match(/is/g);
+
+let text = "\nIs th\nis it?";
+let result = text.match(/^is/m);
+
+let text = "aaaabb"; 
+let result = text.match(/(aa)(bb)/d);
+
+Regular Expression Patterns
+===========================
+
+let text = "Is this all there is?";
+let result = text.match(/[h]/g);
+
+
+let text = "123456789";
+let result = text.match(/[1-4]/g);
+
+let text = "re, green, red, green, gren, gr, blue, yellow";
+let result = text.match(/(red|green)/g);
+
+Metacharacters are characters with a special meaning:
+=====================================================
+
+let text = "Give 100%!"; 
+let result = text.match(/\d/g);
+
+let text = "Is this all there is?";
+let result = text.match(/\s/g);
+
+let text = "HELLO, LOOK AT YOU!"; 
+let result = text.search(/\bLO/);
+
+let text = "Visit W3Schools. Hello World!"; 
+let result = text.match(/\u0057/g);
+
+
+Quantifiers define quantities:
+==============================
+
+let text = "Hellooo World! Hello W3Schools!"; 
+let result = text.match(/o+/g);
+
+let text = "Hellooo World! Hello W3Schools!"; 
+let result = text.match(/lo*/g);
+
+let text = "1, 100 or 1000?";
+let result = text.match(/10?/g);

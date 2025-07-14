@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Iterables</h1>
+    <h2>Iterate over a String</h2>
+    <p id="demo"></p>
+    <script>
+        // Create a String
+        const name = "W3Schools";
+        // // Create a Set
+        // const letters = new Set(["a","b","c"]);
+        // // Create a Map
+        // const fruits = new Map(["apple", 500] , ["bananas", 300] , ["oranges" , 200]);
+
+        // List all Elements
+        let text = ""
+        for (const x of name) {
+            text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

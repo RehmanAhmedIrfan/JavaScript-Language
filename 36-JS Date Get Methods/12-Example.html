@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Dates</h1>
+    <h2>Using Date.now()</h2>
+    <p>Calculate the number of years since January 1, 1970:</p>
+    <script>
+        const minute = 1000*60;
+        const hours = minute * 60;
+        const day = hours * 24;
+        const year = day * 365;
+// Divide Date.now() with a year
+        let noOfYears = Math.round(Date.now() / year);
+        console.log(noOfYears);
+    </script>
+</body>
+</html>
